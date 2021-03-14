@@ -13,7 +13,7 @@ def EfficientNet():
         The keras model.
     """
     inputs = layers.Input(
-        shape=(224, 224, 3)
+        shape=(64, 64, 3)
     )  # input shapes of the images should always be 224x224x3 with EfficientNetB0
 
     # input_tensor 	Optional Keras tensor (i.e. output of layers.Input()) to use as image input for the model.

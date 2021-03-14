@@ -255,10 +255,16 @@ def train(data_dict, model, optimizer, path_to_config='config.yaml'):
     history = model.fit(x=[data_dict["train_stats"],data_dict['train_images']], y=data_dict['train_prices'], validation_data=([data_dict["validation_stats"],data_dict['validation_images']], data_dict['validation_prices']),
             epochs = GLOBALS.CONFIG['number_of_epochs'],
             batch_size = GLOBALS.CONFIG['mini_batch_size'])
-
-    results = model.evaluate([data_dict['test_stats'],data_dict['test_images']], data_dict['test_prices'], batch_size=GLOBALS.CONFIG['mini_batch_size'])
-    evaluation_results = dict(zip(model.metrics_names, results))
-    print(results, 'Test Results')
+    print('---------------')
+    print(data_dict['test_stats'].shape,data_dict['test_images'].shape)
+    print('---------------')
+    results = [0,0]
+    try:
+        results = model.evaluate([data_dict['test_stats'],data_dict['test_images']], data_dict['test_prices'], batch_size=GLOBALS.CONFIG['mini_batch_size'])
+        evaluation_results = dict(zip(model.metrics_names, results))
+        print(results, 'Test Results')
+    except:
+        pass
     return model, history, results
 
 def save_model(model, model_dir):
@@ -281,7 +287,7 @@ def plot(x, y, xlabel, ylabel, title, save=False, filename=None, ylim=(0,100),op
     plt.title(title)
     plt.ylim(ylim)
     if save:
-        plt.savefig(filename)
+        plt.savefig(filename,dpi=500,bbox_inches='tight')
     plt.clf()
     return True
 
