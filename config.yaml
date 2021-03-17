@@ -10,7 +10,7 @@ pretrained_weights_path: "Output_Files/model_weights.h5"
 
 # directory: 'raw_dataset'
 
-CNN_model: 'RegNet'
+CNN_model: 'EfficientNet'
 dense_model:
   - 8
   - 4
