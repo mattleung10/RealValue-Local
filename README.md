@@ -3,7 +3,9 @@
 
 RealValue is a machine learning project for predicting home prices in Toronto. Using TensorFlow convolutional neural networks in conjunction with a dense network component, owners can take a couple of pictures of their home, enter a few simple details and they will be provided an accurate price range of what their home is worth. This ease of use allows homeowners to be confident about their residential decisions and be more informed about the real estate market than ever before.
 
-For more details about our project, please take a look at our Medium article. <insert link here>
+For more details about our project, please take a look at our Medium article [here](insert link here).
+
+Also, check out our website at [real-value.ca](http://www.real-value.ca) to try out some of our algorithms!
 ## Motivation and Goal
 In the field of real estate, the idea of predicting the "right price" for a property is growing heavily in interest. Most current algorithms solely use statistical information about given properties as a form of input to predict its right price. However, these algorithms fail to include a notable form of data that often influences the perception of a buyer: visual data of the house. Recently, convolutional neural networks (CNNs) have increased in prominence for their ability to generate strong feature representations out of images and use those representations to accurately map visual inputs to scalar/vectorized outputs. 
 
@@ -78,8 +80,8 @@ To apply transfer learning on the Toronto Dataset, specify `directory: 'toronto_
 
 Remember to set `import_mode: False` in between switching datasets.
 ## Results
-We achieved a test error of 23% using a Zip Code approach on the California dataset, and a test error of 17% using a Latitude and Longitude approach.
+We achieved a test error of 21% using a Zip Code approach on the California dataset, and a test error of 15% using a Latitude and Longitude approach.
 
-The Zip Code accuracy is nearly 4% better compared to contemporary approaches such as https://www.pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/. 
+The Zip Code accuracy is nearly 6% better compared to contemporary approaches such as https://www.pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/. 
 
 
