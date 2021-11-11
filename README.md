@@ -3,7 +3,7 @@
 
 RealValue is a machine learning project for predicting home prices in Toronto. Using TensorFlow convolutional neural networks in conjunction with a dense network component, owners can take a couple of pictures of their home, enter a few simple details and they will be provided an accurate price range of what their home is worth. This ease of use allows homeowners to be confident about their residential decisions and be more informed about the real estate market than ever before.
 
-For more details about our project, please take a look at our Medium article [here](insert link here).
+**For more details about our project, please take a look at our Medium article [here](https://utorontomist.medium.com/realvalue-house-prediction-a09761d1177d).**
 
 Also, check out our website at [real-value.ca](http://www.real-value.ca) to try out some of our algorithms!
 ## Motivation and Goal
